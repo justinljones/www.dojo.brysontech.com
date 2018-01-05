@@ -1,0 +1,16 @@
+{% extends "Login/Layout/base.html.twig" %}
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block body %}
+    
+    <form action="{{ path("fos_user_security_check") }}" method="POST">
+         <label for="username">Input Username</label>
+        <input type="text" id="username" name="_username" value="" required="required"/><br />
+        
+         <label for="Password">Input Password</label>
+        <input type="password" id="password" name="_password" required="required"/>
+        
+        
+        <input type="submit" id="_submit" name="_submit" value="Submit"/>
+    </form>
+{%endblock%}

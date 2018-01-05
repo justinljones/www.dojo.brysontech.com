@@ -24,6 +24,6 @@ class DefaultController extends Controller
      */
     public function loginAction(Request $request)
     {
-        return $this->render('Login/index.html.twig');
+        return $this->render('Login/Index/index.html.twig');
     }
 }
